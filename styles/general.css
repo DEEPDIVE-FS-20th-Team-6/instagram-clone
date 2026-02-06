@@ -10,7 +10,12 @@
   --border: #dbdbdb;
   --text-primary: #262626;
   --text-secondary: #8e8e8e;
+  --text-tertiary: #c7c7c7;
   --link: #0095f6;
+  --link-dark: #00376b;
+  --icon-primary: #000000;
+  --bg-secondary: #efefef;
+  --bg-placeholder: #f0f0f0;
   --story-gradient: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
   --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
