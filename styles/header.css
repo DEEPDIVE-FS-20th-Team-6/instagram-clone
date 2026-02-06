@@ -1,0 +1,106 @@
+/* ========================================
+   Header - 상단 네비게이션
+   ======================================== */
+
+/* ----- 헤더 컨테이너 ----- */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background: var(--bg-header);
+  border-bottom: 1px solid var(--border);
+  z-index: 100;
+}
+
+.header-inner {
+  max-width: 975px;
+  margin: 0 auto;
+  height: 100%;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ----- 로고 ----- */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.logo-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.logo-text {
+  margin-left: 8px;
+  font-family: "Grand Hotel", cursive;
+  font-size: 28px;
+  margin-top: 4px;
+  background: none;
+  -webkit-text-fill-color: initial;
+  color: #000;
+  letter-spacing: 1px;
+}
+
+/* ----- 검색 ----- */
+.search-box {
+  flex: 0 0 268px;
+  height: 36px;
+  background: #efefef;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+}
+
+.search-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+}
+
+.search-input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  font-size: 14px;
+  outline: none;
+}
+
+/* ----- 네비게이션 아이콘 ----- */
+.nav-icons {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.nav-icon {
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.1s ease;
+}
+
+.nav-icon:hover {
+  opacity: 0.6;
+}
+
+.nav-icon svg {
+  width: 24px;
+  height: 24px;
+  stroke-width: 1.8px;
+  stroke: #000;
+}
+
+.nav-icon img {
+  width: 24px;
+  height: 24px;
+}

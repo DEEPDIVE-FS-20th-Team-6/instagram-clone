@@ -1,0 +1,66 @@
+/* ========================================
+   Responsive - 반응형 스타일
+   ======================================== */
+
+/* ----- 태블릿 (935px 이하) ----- */
+@media (max-width: 935px) {
+  .sidebar {
+    display: none;
+  }
+
+  .feed-section {
+    width: 100%;
+    max-width: 600px;
+    flex: none;
+  }
+}
+
+/* ----- 모바일 (640px 이하) ----- */
+@media (max-width: 640px) {
+  .main {
+    padding-top: 0;
+  }
+
+  .search-box {
+    display: none;
+  }
+
+  .post {
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
+  }
+}
+
+/* ----- 소형 모바일 (480px 이하) ----- */
+@media (max-width: 480px) {
+  .header-inner {
+    padding: 0 16px;
+  }
+
+  .nav-icons {
+    gap: 16px;
+  }
+
+  .story-ring {
+    width: 60px;
+    height: 60px;
+  }
+
+  .main {
+    padding: 0;
+    margin-top: 0;
+  }
+
+  .post {
+    border: none;
+    border-radius: 0;
+    margin-bottom: 10px;
+    border-top: 1px solid #efefef;
+    border-bottom: 1px solid #efefef;
+  }
+
+  .logo-text {
+    font-size: 24px;
+  }
+}

@@ -1,0 +1,129 @@
+/* ========================================
+   Sidebar - 사이드바
+   ======================================== */
+
+/* ----- 사이드바 컨테이너 ----- */
+.sidebar {
+  flex: 0 0 320px;
+  position: sticky;
+  top: 90px;
+  height: fit-content;
+}
+
+/* ----- 사용자 프로필 ----- */
+.sidebar-user {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+  padding-left: 4px;
+}
+
+.sidebar-user-info {
+  flex: 1;
+}
+
+.sidebar-username {
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--text-primary);
+}
+
+.sidebar-name {
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin-top: 2px;
+}
+
+.sidebar-switch {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--link);
+  cursor: pointer;
+}
+
+/* ----- 추천 섹션 ----- */
+.sidebar-section {
+  margin-bottom: 20px;
+}
+
+.sidebar-section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  padding: 0 4px;
+}
+
+.sidebar-section-header span {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.sidebar-section-header a {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.suggestion-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 4px;
+}
+
+.suggestion-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.suggestion-info a {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.suggestion-info span {
+  font-size: 12px;
+  color: var(--text-secondary);
+  display: block;
+  margin-top: 2px;
+}
+
+.follow-link {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--link);
+  cursor: pointer;
+}
+
+.follow-link:hover {
+  color: #00376b;
+}
+
+/* ----- 푸터 ----- */
+.sidebar-footer {
+  margin-top: 30px;
+  padding-left: 4px;
+}
+
+.sidebar-footer a {
+  font-size: 12px;
+  color: #c7c7c7;
+  display: inline-block;
+  margin-right: 2px;
+}
+
+.sidebar-footer a::after {
+  content: "·";
+  margin-left: 2px;
+}
+
+.copyright {
+  margin-top: 16px;
+  font-size: 12px;
+  color: #c7c7c7;
+  text-transform: uppercase;
+}
