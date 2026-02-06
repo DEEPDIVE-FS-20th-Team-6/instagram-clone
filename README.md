@@ -1,33 +1,52 @@
-# Instagram 웹 목업
+# Instagram UI Clone
 
-인스타그램 웹사이트 레이아웃을 본뜬 정적 목업입니다.
+A pixel-perfect, responsive replica of the Instagram web interface, built with HTML5 and modular CSS.
 
-## 포함된 요소
+![Instagram Clone Preview](assets/images/preview.png)
 
-- **상단 헤더**: 로고, 검색창, 홈/메시지/새 게시물/탐색/좋아요/프로필 아이콘
-- **스토리**: 그라데이션 링 + 아바타, 스크롤 가능
-- **피드**: 게시물 카드 (헤더, 이미지 영역, 좋아요/댓글/공유/저장, 캡션)
-- **사이드바**: 내 프로필, 회원님을 위한 추천, 푸터 링크
+## 🚀 Features
 
-## 실행 방법
+- **Modular Architecture**: CSS styles are split into logical modules (`general`, `header`, `feed`, `sidebar`, `responsive`) for better maintainability.
+- **Authentic Assets**: 
+  - Replaced emojis with real **SVG icons** extracted from the official Instagram web interface.
+  - High-quality sample images for feed posts (Seoul & Busan).
+- **Responsive Design**: 
+  - Adapts to different screen sizes.
+  - Sidebar automatically hides on smaller screens (< 935px).
+- **Modern Styling**:
+  - Uses **CSS Variables** for consistent theming and easy maintenance.
+  - Flexbox layout for precise alignment.
+  - "Grand Hotel" font for the logo.
 
-`index.html` 파일을 브라우저에서 열면 됩니다.
+## 📂 Project Structure
 
-```bash
-# Windows (탐색기에서 index.html 더블클릭)
-start index.html
-
-# 또는 브라우저 주소창에 파일 경로 입력
-# file:///C:/Users/Home/Desktop/인스타그램/index.html
+```
+/
+├── index.html            # Main markup
+├── styles/               # CSS Modules
+│   ├── general.css       # Variables & Reset
+│   ├── header.css        # Navigation bar
+│   ├── feed.css          # Posts & Stories
+│   ├── sidebar.css       # Suggestions & Footer
+│   └── responsive.css    # Media queries
+└── assets/
+    ├── icons/            # SVG Icons (Home, Search, Like, etc.)
+    └── images/           # Sample post images & README preview
 ```
 
-## 파일 구성
+## 🛠️ Usage
 
-- `index.html` - 구조
-- `styles.css` - 스타일 (반응형 포함)
-- `README.md` - 설명
+Simply open `index.html` in any modern web browser.
 
-## 반응형
+```bash
+# Using Python simple server (optional)
+python3 -m http.server 8080
+# Then visit http://localhost:8080
+```
 
-- 935px 이하: 사이드바 숨김
-- 640px 이하: 검색창·로고 텍스트 숨김
+## 📸 Credits
+
+- **Icons**: Authentic Instagram SVG paths.
+- **Images**:
+  - Gyeongbokgung Palace (Seoul): [Pixnio](https://pixnio.com/) (Public Domain)
+  - Haeundae Beach (Busan): [Wikimedia Commons](https://commons.wikimedia.org/) (CC BY 2.0)
