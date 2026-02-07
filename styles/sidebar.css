@@ -117,7 +117,7 @@
 }
 
 .sidebar-footer a::after {
-  content: "·";
+  content: '·';
   margin-left: 2px;
 }
 
